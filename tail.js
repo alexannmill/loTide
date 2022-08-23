@@ -1,9 +1,12 @@
-const head = function(actual) {
-  return actual = actual[0];
+const tail = function(actual) {
+  let array = actual.splice(1);
+  return array;
 };
+
+
 // const assertEqual = function(actual, expected) {
 //   if (actual === expected) console.log(`✅  Assertion Pass ${actual} === ${expected}`);
 //   else console.log(`⛔  Assertion Fail  ${actual} !== ${expected}`);
 // };
-// assertEqual(head([5, 6, 7]), 5);
-// assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+// const result = tail(["Hello", "Lighthouse", "Labs"]);
+// assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
