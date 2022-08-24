@@ -1,3 +1,5 @@
+let string = process.argv[2];
+
 function reverseMe(string) {
   let reverse = '';
   for (let i = (string.length - 1); i >= 0; i--) {
@@ -6,4 +8,4 @@ function reverseMe(string) {
   return reverse;
 }
 
-console.log(reverseMe('hello'));
+console.log(reverseMe(string));
