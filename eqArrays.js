@@ -12,7 +12,7 @@ function eqArrays(ar1, ar2){
         return false;
       }
   }
-  return true
+  return true;
 }
 eqArrays([1, 2, 3], [1, 2, 3]);
 
