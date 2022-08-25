@@ -33,12 +33,6 @@ const eqObjects = function(object1, object2) {
     return true
 };
     
-    //check if object1 [k] is array
-    // comparr to obj2[k] is array
-    //compar leg
-    //if so loop one obj[k]
-    //compar element in arrs
-
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 console.log(eqObjects(ab, ba)); // => true
