@@ -10,7 +10,7 @@ function eqArrays(ar1, ar2){
   }
   return true;
 }
-function assertEqualArray(ar1, ar2){
+function assertArraysEqual(ar1, ar2){
   if(eqArrays(ar1, ar2)){
     console.log(`✅  Assertion Pass ${ar1} === ${ar2}`)
   }
@@ -19,7 +19,7 @@ function assertEqualArray(ar1, ar2){
   }
 }
 
-assertEqualArray([1, 2, 3], [1, 2, 3]);
+assertArraysEqual([1, 2, 3], [1, 2, 3]);
 
 eqArrays([1, 2, 3], [1, 2, 3]), true;
 eqArrays([1, 2, 3], [3, 2, 1]), false;
