@@ -36,12 +36,3 @@ const letterPositions = function(sentence) {
 };
 assertEqualArray(letterPositions("hello").e, [1]);
 letterPositions("lighthouse in the house")
-//return empty object
-// loop through arr - for in 
-//compare letter to keys - 
-//make key of letter or add to exs. key - has own property
-//track the index of letter
-//make index into var
-//add index to object
-//
-//omit spaces from
