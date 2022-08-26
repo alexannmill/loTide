@@ -21,8 +21,8 @@ function assertArraysEqual(ar1, ar2){
 }
 
 
-// const words = ['pizza', 'pop', 'chips', 'cookies', 'cake'];
-const words = [1, 4, 2, 7, 2, -6]
+const words = ['pizza', 'pop', 'chips', 'cookies', 'cake'];
+// const words = [1, 4, 2, 7, 2, -6]
 
 const map = function(array, callback) {
   const results = []
@@ -32,10 +32,10 @@ const map = function(array, callback) {
   return results
 };
 
-const results1 = map(words, word => word + 5);
-// console.log(results1);
+const results1 = map(words, word => word[0]);
+console.log(results1);
 
-const actualMap = words.map(x => x + 5)
+const actualMap = words.map(x => x[0])
 // console.log(actualMap)
 
 
