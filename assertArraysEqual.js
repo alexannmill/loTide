@@ -1,15 +1,5 @@
-function eqArrays(ar1, ar2){
-  if ( ar1.length !== ar2.length){ 
-    return false;
-  }
-  for (let i = 0; i < ar1.length; i++){
-      // console.log(ar1[i], ar2[i])
-      if(ar1[i] !== ar2[i]){
-        return false;
-      }
-  }
-  return true;
-}
+const eqArrays = require("./eqArrays")
+
 function assertArraysEqual(ar1, ar2){
   if(eqArrays(ar1, ar2)){
     console.log(`✅  Assertion Pass ${ar1} === ${ar2}`)
@@ -19,4 +9,7 @@ function assertArraysEqual(ar1, ar2){
   }
 }
 
-//Actual Function
+// assertArraysEqual([1, 2, 3, 4], [1, 2, 3, 4]);
+// assertArraysEqual([1, 2], [1, 3]);
+
+module.exports = assertArraysEqual;
