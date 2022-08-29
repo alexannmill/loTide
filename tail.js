@@ -5,5 +5,4 @@ const tail = function(actual) {
   return actual.slice(1);
 };
 
-console.log(tail(actual));
-
+module.exports = tail;
