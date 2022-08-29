@@ -1,5 +1,3 @@
-const assertEqual = require("./assertEqual");
-
 let actual = process.argv[2];
 
 const head = function(actual) {

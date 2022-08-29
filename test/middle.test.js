@@ -1,11 +1,24 @@
 const middle = require("../middle");
-const assertArraysEqual = require("../assertArraysEqual");
+const assert = require("chai").assert
 
 
-assertArraysEqual(middle([]),[]);
-assertArraysEqual(middle([1]),[1]); // => 
-assertArraysEqual(middle([1, 2]), [1,2]); // => [
-assertArraysEqual(middle([1, 2, 3]), [2]); // => [2)  
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7, 8]), [4, 5]);
-assertArraysEqual(middle([1, 2, 3, 4,]), [2, 3]);
+describe("testing the middle function", () => {
+  it("should return [] for empty array", () => {
+    assert.deepEqual(middle([]), []);
+  });
+  it("returns the only number in a single element array", () => {
+    assert.deepEqual(middle([1]), [1]);
+  });
+  it("returns both numbers in a two element array", () => {
+    assert.deepEqual(middle([5, 4]), [5, 4]);
+  });
+  it("returns middle number in 3 element array", () => {
+    assert.deepEqual(middle([1, 2, 3]), [2]);
+  });
+  it("returns 2 middle numbers for even length array", () => {
+    assert.deepEqual(middle([1, 2, 3, 4]), [2, 3]);
+  });
+  it("returns 1 middle number for odd length array", () => {
+    assert.deepEqual(middle([1, 2, 3, 4,  5]), [3]);
+  });
+});
