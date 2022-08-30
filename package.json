@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@alexannmill/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A small spin off of Lodash library",
+  "main": "",
   "directories": {
     "test": "test"
   },
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/alexannmill/loTide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alex Miller",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alexannmill/loTide/issues"
