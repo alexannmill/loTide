@@ -1,6 +1,6 @@
 let actual = process.argv[2];
 
-const head = function(actual) {
+const head = function (actual) {
   return actual[0];
 };
 

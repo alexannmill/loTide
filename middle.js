@@ -1,5 +1,5 @@
 function middle(array) {
-  let mid = Math.floor((array.length) / 2);
+  let mid = Math.floor(array.length / 2);
   let elements = [];
   if (array.length < 3) {
     return array;
@@ -12,7 +12,6 @@ function middle(array) {
     elements.push(array[evenMid], array[mid]);
   }
   return elements;
-};
-
+}
 
 module.exports = middle;

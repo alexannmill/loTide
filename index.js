@@ -6,6 +6,6 @@ const eqArrays = require("./eqArrays")
 module.exports = {
   head,
   tail,
-  middle
-  eqArrays
+  middle,
+  eqArrays,
 };

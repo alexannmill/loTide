@@ -1,6 +1,6 @@
 let actual = process.argv[2];
 
-const tail = function(actual) {
+const tail = function (actual) {
   return actual.slice(1);
 };
 

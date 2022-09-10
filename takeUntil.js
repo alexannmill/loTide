@@ -14,17 +14,14 @@ function eqArrays(ar1, ar2) {
 function assertArraysEqual(ar1, ar2) {
   if (eqArrays(ar1, ar2)) {
     console.log(`✅  Assertion Pass ${ar1} === ${ar2}`);
-  }
-  else {
+  } else {
     console.log(`⛔  Assertion Fail  ${ar1} !== ${ar2}`);
   }
 }
 
-
-const takeUntil = function(array, callback) {
+const takeUntil = function (array, callback) {
   const results = [];
   for (let element of array) {
-    console.log(callback(element))
     if (callback(element)) {
       return results;
     }
@@ -33,10 +30,8 @@ const takeUntil = function(array, callback) {
   return results;
 };
 
-
-
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
-const results1 = takeUntil(data1, x => x < 0);
+const results1 = takeUntil(data1, (x) => x < 0);
 console.log(results1);
 
 // console.log('---');

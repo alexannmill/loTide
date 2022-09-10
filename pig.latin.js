@@ -4,7 +4,7 @@ function pigLatian(string) {
   // piggy = piggy.shift()
   let piggy = string.slice(1);
   piggy = piggy + firstL;
-  piggy = piggy + 'ay';
+  piggy = piggy + "ay";
   return piggy;
 }
 
