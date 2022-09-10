@@ -1,22 +1,17 @@
-const assertEqual = require("../assertEqual")
-const eqArrays = require("../eqArrays")
-const assert= require("chai").assert
+const eqArrays = require("../eqArrays");
+const assert = require("chai").assert;
 
-
-describe("that two of the same array r", () => {
-  it("returns index of given key hello.e - 1", () => {
-    assert.equal(eqArrays([1, 2, 3], [1, 2, 3]), true);
+describe("that two of the same array return true", () => {
+  it("returns true for ([1, 2, 3], [1, 2, 3])", () => {
+    assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
   });
-  it("returns the indexs of given letter ", () => {
-    assert.equal(letterPositions("lighthouse in the house").h, [3, 5, 15, 18]);
+  it("returns false for array not in the same order but same elements", () => {
+    assert.deepEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
   });
-  it("returns the indexs of given letter ", () => {
-    assert.equal(letterPositions("lighthouse in the house").h, [3, 5, 15, 18]);
+  it("returns true for stringed numbers in same order", () => {
+    assert.deepEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
+  });
+  it("returns false for stringed vs number value types", () => {
+    assert.deepEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
   });
 });
-
-
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false)
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);

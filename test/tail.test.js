@@ -15,10 +15,3 @@ describe("testing the tail function", () => {
     assert.deepEqual(tail([5, 4, 2, 5]), [4, 2, 5]);
   });
 });
-
-
-
-
-// const assertEqual = require("../assertEqual");
-// assertEqual(tail("hello"), "ello");
-// assertEqual(tail("alex"), "lex");

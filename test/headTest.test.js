@@ -1,7 +1,7 @@
 const head = require("../head");
 const assert = require("chai").assert;
 
-describe("testing the head function", () => {
+describe("testing the head function, which slices first element and returns rest of array", () => {
   it("should return undefined if empty sting", () => {
     assert.strictEqual(head(""), undefined);
   });
